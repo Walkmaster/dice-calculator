@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dicecalculator.MainActivity$PlaceholderFragment">
+
+    <TableLayout
+        android:id="@+id/GridButtonLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:columnOrderPreserved="true"
+        android:stretchColumns="*"
+        android:layout_gravity="fill">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"/>
+
+        <TableRow>
+
+            <Button
+                android:text="@string/add_button"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="@string/sub_button"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="@string/mul_button"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="@string/div_button"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="@string/die_button"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <Button
+            android:text="@string/roll_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="@string/crit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/GridButtonLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Maths"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="Sum"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="@string/clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="@string/calcu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Arty Ficer\'s Dice Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="roll_button">Roll!</string>
+    <string name="crit_button">Crit!</string>
+    <string name="clear_button">Clear</string>
+    <string name="calcu_button">Calculate</string>
+    <string name="add_button">+</string>
+    <string name="sub_button">-</string>
+    <string name="mul_button">X</string>
+    <string name="div_button">/</string>
+    <string name="die_button">d</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
