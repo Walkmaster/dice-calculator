@@ -4,28 +4,75 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.os.Build;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
+
+    // Append
+    DiceRoll d;
+    String ss = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.fragment_main);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+        final TextView s = (TextView)findViewById(R.id.sum_field);
+        final TextView frequency = (TextView)findViewById(R.id.frequency__field);
+        final TextView size = (TextView)findViewById(R.id.size__field);
+        d = new DiceRoll();
+
+        // Assign buttons
+        Button twenty = (Button) findViewById(R.id.diceroll_button);
+        Button dOperation = (Button ) findViewById(R.id.d_operation);
+
+        // Set text in empty fields
+        frequency.setText("1");
+        size.setText("20");
+
+        // 1d20 test button
+        twenty.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                 ss = String.valueOf(d.randomGen(1, 20));
+                 s.setText(ss);
+            }
+        });
+
+        dOperation.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                ss = String.valueOf(d.randomGen(
+                        Integer.parseInt(frequency.getText().toString()),
+                        Integer.parseInt(size.getText().toString())));
+                s.setText(ss);
+            }
+        });
+
+        // frequency and size text re-setters
+        frequency.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean b) {
+                if (frequency.getText().toString().equals("") && !b)
+                    frequency.setText("1");
+            }
+        });
+
+        size.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+            public void onFocusChange(View v, boolean b) {
+                if (size.getText().toString().equals("") && !b)
+                    size.setText("20");
+            }
+        });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,7 +109,4 @@ public class MainActivity extends ActionBarActivity {
             return rootView;
         }
     }
-
-
-
 }

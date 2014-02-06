@@ -12,6 +12,9 @@
     <string name="mul_button">X</string>
     <string name="div_button">/</string>
     <string name="die_button">d</string>
+    <string name="d_button">1d20</string>
+    <string name="form_button">Add Formula</string>
+
     <string name="action_settings">Settings</string>
 
 </resources>

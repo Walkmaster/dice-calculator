@@ -866,21 +866,24 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f07003e;
+        public static final int action_settings=0x7f070044;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int checkbox=0x7f07002d;
         public static final int collapseActionView=0x7f070011;
         public static final int container=0x7f07003c;
+        public static final int d_operation=0x7f070040;
         public static final int default_activity_button=0x7f070028;
         public static final int dialog=0x7f070012;
+        public static final int diceroll_button=0x7f070042;
         public static final int disableHome=0x7f070008;
         public static final int dropdown=0x7f070013;
         public static final int edit_query=0x7f070030;
         public static final int end=0x7f07000c;
         public static final int expand_activities_button=0x7f070026;
         public static final int expanded_menu=0x7f07002c;
+        public static final int frequency__field=0x7f07003f;
         public static final int home=0x7f070017;
         public static final int homeAsUp=0x7f070005;
         public static final int icon=0x7f07002a;
@@ -892,6 +895,7 @@ containing a value of this type.
         public static final int never=0x7f07000d;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
+        public static final int number_field=0x7f07003e;
         public static final int progress_circular=0x7f070018;
         public static final int progress_horizontal=0x7f070019;
         public static final int radio=0x7f07002f;
@@ -909,8 +913,10 @@ containing a value of this type.
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
         public static final int showTitle=0x7f070006;
+        public static final int size__field=0x7f070041;
         public static final int split_action_bar=0x7f07001e;
         public static final int submit_area=0x7f070039;
+        public static final int sum_field=0x7f070043;
         public static final int tabMode=0x7f070002;
         public static final int title=0x7f07002b;
         public static final int top_action_bar=0x7f070020;
@@ -972,12 +978,14 @@ containing a value of this type.
         public static final int calcu_button=0x7f0a0010;
         public static final int clear_button=0x7f0a0011;
         public static final int crit_button=0x7f0a0012;
-        public static final int die_button=0x7f0a0013;
-        public static final int div_button=0x7f0a0014;
-        public static final int hello_world=0x7f0a0015;
-        public static final int mul_button=0x7f0a0016;
-        public static final int roll_button=0x7f0a0017;
-        public static final int sub_button=0x7f0a0018;
+        public static final int d_button=0x7f0a0013;
+        public static final int die_button=0x7f0a0014;
+        public static final int div_button=0x7f0a0015;
+        public static final int form_button=0x7f0a0016;
+        public static final int hello_world=0x7f0a0017;
+        public static final int mul_button=0x7f0a0018;
+        public static final int roll_button=0x7f0a0019;
+        public static final int sub_button=0x7f0a001a;
     }
     public static final class style {
         /**  Customize your theme here. 

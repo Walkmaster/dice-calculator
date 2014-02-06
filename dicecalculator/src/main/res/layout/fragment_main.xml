@@ -18,6 +18,7 @@
         android:layout_gravity="fill">
 
     <EditText
+        android:id="@+id/number_field"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:inputType="number"/>
@@ -40,9 +41,24 @@
                 android:text="@string/div_button"
                 android:layout_height="wrap_content"/>
 
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/frequency__field"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+
             <Button
+                android:id="@+id/d_operation"
                 android:text="@string/die_button"
                 android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/size__field"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
 
         </TableRow>
 
@@ -55,6 +71,12 @@
             android:text="@string/crit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/diceroll_button"
+            android:text="@string/crit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </TableLayout>
 
@@ -72,6 +94,7 @@
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/sum_field"
             android:text="Sum"
             android:textSize="@dimen/activity_vertical_margin"
             android:layout_width="match_parent"
@@ -84,6 +107,11 @@
 
         <Button
             android:text="@string/calcu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="@string/form_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
